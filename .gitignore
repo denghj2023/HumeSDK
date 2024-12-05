@@ -1,0 +1,94 @@
+# Android Studio
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.idea/
+
+# User-specific configurations
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/libraries/
+.idea/.name
+.idea/modules.xml
+.idea/vcs.xml
+
+# Keystore files (不要将密钥文件提交到版本控制)
+*.jks
+*.keystore
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+.gradle/cache/
+.gradle/gradle.properties
+**/build/
+**/local.properties
+
+# Proguard
+proguard/
+proguard-files/
+
+# Log and database files
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Android Studio configuration
+.idea/assetWizardSettings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+
+# Files for Android Studio 3.6.+
+.idea/caches/build_file_checksums.ser
+
+# NDK
+.externalNativeBuild/
+
+# Unit test files
+*.test
+
+# Temporary files
+*.temp
+*.tmp
+*.bak
+*.swp
+*.orig
+*.old
+
+# Ignore crashlytics and fabric files
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Jetpack Compose
+.idea/codeStyles/Project.xml
+.idea/codeStyles/Workspace.xml
+
+# IntelliJ
+out/
+
+# Local configuration
+local.properties
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.apk
+*.ap_
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+# Kotlin specific
+*.kotlin_metadata
