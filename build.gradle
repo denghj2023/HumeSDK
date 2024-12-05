@@ -1,4 +1,7 @@
-apply plugin: 'maven-publish'
+plugins {
+    id 'base'             // 基础插件
+    id 'maven-publish'    // Maven 发布插件
+}
 
 group = 'com.github.denghj2023'
 version = '1.1.1'
@@ -10,9 +13,14 @@ publishing {
             artifactId = 'HumeSDK'
             version = '1.1.1'
 
+            // 使用现有的 .aar 文件
             artifact(file('libs/HumeSDK-1.1.1.aar')) {
-                extension 'aar'
+                extension = 'aar'
             }
         }
     }
+}
+
+repositories {
+    mavenCentral()
 }
