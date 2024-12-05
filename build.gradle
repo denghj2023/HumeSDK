@@ -1,10 +1,10 @@
 plugins {
-    id 'base'             // 基础插件
-    id 'maven-publish'    // Maven 发布插件
+    id 'base'             // 提供基础任务（如 clean）
+    id 'maven-publish'    // 发布插件
 }
 
-group = 'com.github.denghj2023'
-version = '1.1.1'
+group = 'com.github.denghj2023' // 替换为你的 GitHub 用户名
+version = '1.1.1'              // 替换为你的版本号
 
 publishing {
     publications {
@@ -13,14 +13,16 @@ publishing {
             artifactId = 'HumeSDK'
             version = '1.1.1'
 
-            // 使用现有的 .aar 文件
+            // 指定 .aar 文件路径
             artifact(file('libs/HumeSDK-1.1.1.aar')) {
                 extension = 'aar'
             }
         }
     }
-}
 
-repositories {
-    mavenCentral()
+    repositories {
+        maven {
+            url = uri("$buildDir/repo") // 用于生成本地仓库文件
+        }
+    }
 }

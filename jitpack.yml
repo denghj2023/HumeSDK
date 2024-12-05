@@ -1,5 +1,8 @@
 jdk:
   - openjdk11
 
+gradle:
+  wrapper: true  # 强制使用项目中的 Gradle Wrapper
+
 script:
   - ./gradlew clean publishToMavenLocal
